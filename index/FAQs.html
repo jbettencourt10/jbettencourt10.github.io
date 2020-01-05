@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/navbar_classes.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/typing_classes.css">
+    <script src="../assets/js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Second navbar for categories -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html">Jarred Bettencourt</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#" style="color: black;">FAQs</a></li>
+                        <li>
+                            <a class="btn btn-default btn-outline btn-circle" data-toggle="collapse"
+                                href="#nav-collapse1" aria-expanded="false" aria-controls="nav-collapse1">Contact
+                                Me!</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container -->
+        </nav><!-- /.navbar -->
+
+        <div class="container">
+            <h1 class="text-center">Frequently Asked Questions</h1>
+        </div>
+
+
+        <script>
+            $(document).ready(function () {
+
+                $('.faq_question').click(function () {
+
+                    if ($(this).parent().is('.open')) {
+                        $(this).closest('.faq').find('.faq_answer_container').animate({
+                            'height': '0'
+                        }, 500);
+                        $(this).closest('.faq').removeClass('open');
+
+                    } else {
+                        var newHeight = $(this).closest('.faq').find('.faq_answer').height() + 'px';
+                        $(this).closest('.faq').find('.faq_answer_container').animate({
+                            'height': newHeight
+                        }, 500);
+                        $(this).closest('.faq').addClass('open');
+                    }
+
+                });
+
+            });
+        </script>
+
+        <div class="faq_container">
+            <div class="faq text-center">
+                <div class="faq_question">Are you even popular enough to label this "Frequently"?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">Absolutely not.</div>
+                </div>
+            </div>
+        </div>
+        <div class="faq_container">
+            <div class="faq text-center">
+                <div class="faq_question">What school do you attend?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">I'm currently a sophomore at the University of Massachusetts Amherst in
+                        Amherst, MA. I'm double majoring in Computer Science and several concentrations of Mathematics
+                        (Applied, Computing, Pure, Actuarial, & Statistics). Currently, I have a 3.9 GPA.</div>
+                </div>
+            </div>
+        </div>
+        <div class="faq_container">
+            <div class="faq text-center">
+                <div class="faq_question">Who are you?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">I'm Jarred. </div>
+                </div>
+            </div>
+        </div>
+        <div class="faq_container">
+            <div class="faq text-center">
+                <div class="faq_question">Where do you work / Are you currently employed?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">At the moment, I am a fully remote worker for Convention Data Services. CDS
+                        specializes in developing websites for trade shows around the world with upwards of 100,000+
+                        people at the most popular events we help organize.</div>
+                </div>
+            </div>
+        </div>
+        <div class="faq_container">
+            <div class="faq text-center">
+                <div class="faq_question">Jared, you seem to have misspelled your name on the entire website!</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">My parents thought they were being unique when they added the extra r. I
+                        agree that it's a little strange. You'd have to ask them.</div>
+                </div>
+            </div>
+        </div>
+        <div class="faq_container">
+            <div class="faq text-center">
+                <div class="faq_question">What are your interests?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">Placeholder.</div>
+                </div>
+            </div>
+        </div>
+        <div class="faq_container">
+            <div class="faq text-center">
+                <div class="faq_question">What are your hobbies?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">Placeholder.</div>
+                </div>
+            </div>
+        </div>
+        <div class="faq_container">
+            <div class="faq text-center">
+                <div class="faq_question">What do you specialize in?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">Placeholder.</div>
+                </div>
+            </div>
+        </div>
+        <div class="faq_container">
+            <div class="faq text-center">
+                <div class="faq_question">Favorite picture on the internet?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer"><img src="../assets/images/pizzcat2.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="faq_container">
+            <div class="faq text-center">
+                <div class="faq_question">Favorite video on the internet?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer"> <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/x4qRDb_uKyM" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe> </div>
+                </div>
+            </div>
+        </div>
+        <div class="faq_container">
+            <div class="faq text-center">
+                <div class="faq_question">What's your favorite color?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">Typically orange.</div>
+                </div>
+            </div>
+        </div>
+        <div class="faq_container">
+            <div class="faq text-center">
+                <div class="faq_question">What's your favorite song?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer"><iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/yca6UsllwYs" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe><br> It's really cool when such a simple song just works.</div>
+                </div>
+            </div>
+        </div>
+        <div class="faq_container">
+            <div class="faq text-center">
+                <div class="faq_question">How old are you?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">I am <span id="age"></span> right now.  That number should update dynamically.</div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $("#age").html(calculate_age(10, 28, 1999));
+        </script>
